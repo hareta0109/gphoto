@@ -55,6 +55,22 @@ This project is a Python script that sets metadata for image files and updates t
 
 4. The script will process image files and metadata files in the `data/Takeout/Google Photos` directory and output them to the `data/out` directory.
 
+## Google Photos Export
+
+This script is primarily designed to work with data exported from Google Photos. When you export your data from Google Photos, you will receive both media files (such as JPEG images) and metadata files (in JSON format). The metadata files contain additional information about the media files, such as titles, descriptions, capture dates, and GPS information.
+
+### Media and Metadata Files
+
+- **Media Files**: These are the actual image or video files (e.g., `.jpg`, `.mp4`) exported from Google Photos.
+- **Metadata Files**: These are JSON files that contain metadata for the corresponding media files. Each media file will have a corresponding metadata file with the same name but a `.json` extension.
+
+For example:
+
+- `IMG_20210101_123456.jpg` (media file)
+- `IMG_20210101_123456.json` (metadata file)
+
+The script reads the metadata from the JSON files and applies it to the corresponding media files.
+
 ## File Structure
 
 - `main.py`: Main script file
