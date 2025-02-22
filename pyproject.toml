@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "gphoto"
+version = "0.1.0"
+description = ""
+authors = ["Muku Otani <60395718+hareta0109@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+standard-imghdr = "^3.13.0"
+pillow = "^11.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
